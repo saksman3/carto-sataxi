@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+ web:
+   container_name: carto
+   build:
+     context: .
+     dockerfile: $(System.DefaultWorkingDirectory)/_STACC\ 2.0/Dockerfile
+   ports: 
+     - '8080:80' 
